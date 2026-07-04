@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/jsun/.claude/**)",
+      "Bash(curl -s \"https://api.github.com/repos/anthropics/skills/contents/skills/frontend-design\")",
+      "Bash(mkdir -p ~/.claude/skills/frontend-design)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md\" -o ~/.claude/skills/frontend-design/SKILL.md)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/LICENSE.txt\" -o ~/.claude/skills/frontend-design/LICENSE.txt)",
+      "Bash(curl -s \"https://api.github.com/repos/nextlevelbuilder/ui-ux-pro-max-skill\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/package.json\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/README.md\")",
+      "Bash(npm install *)",
+      "Bash(npm config *)",
+      "Bash(sudo npm install -g ui-ux-pro-max-cli)",
+      "Bash(mkdir -p public/images)",
+      "Bash(cp \"media/Gemini_Generated_Image_wmwbrzwmwbrzwmwb.png\" public/images/logo.png)",
+      "Bash(cp \"media/DSCF4910.JPG\" public/images/hero.jpg)",
+      "Bash(cp \"media/0fdf0c5e-469f-4f01-af36-c6d509342688.png\" public/images/product-flatlay.jpg)",
+      "Bash(cp \"media/DSCF4747.JPG\" public/images/community-friends.jpg)",
+      "Bash(npm view *)",
+      "Bash(node -e \"const v=JSON.parse\\(require\\('fs'\\).readFileSync\\(0,'utf8'\\)\\); console.log\\(v.filter\\(x=>x.startsWith\\('14.2.'\\)\\).slice\\(-10\\)\\)\")",
+      "Bash(npm audit *)",
+      "Bash(cat > \"/Users/jsun/Downloads/The ScrunchLab/website/.claude/launch.json\" 2>/dev/null; mkdir -p \"/Users/jsun/Downloads/The ScrunchLab/website/.claude\" && cat \"/Users/jsun/Downloads/The ScrunchLab/website/.claude/launch.json\" 2>/dev/null || echo \"no existing file\")",
+      "Bash(nohup npm run dev)",
+      "Bash(disown)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/shop)",
+      "Bash(curl -s http://localhost:3000/shop/sustainable-scrunchie)",
+      "Bash(curl -s http://localhost:3000/shop/diy-scrunchie-kit)",
+      "Bash(curl -s http://localhost:3000/about)",
+      "Bash(curl -s http://localhost:3000/learn)",
+      "Bash(curl -s http://localhost:3000/contact)",
+      "Bash(curl -s -o /dev/null -w \"404 test: %{http_code}\\\\n\" http://localhost:3000/shop/nonexistent)",
+      "Bash(curl -s -o /dev/null -w \"logo.png: %{http_code}\\\\n\" http://localhost:3000/images/logo.png)",
+      "Bash(curl -s -o /dev/null -w \"hero via next/image: %{http_code}\\\\n\" \"http://localhost:3000/_next/image?url=%2Fimages%2Fhero.jpg&w=1080&q=75\")",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(lsof -ti:3000)",
+      "Bash(xargs -r kill -9)",
+      "Bash(npm run *)"
+    ]
+  }
+}

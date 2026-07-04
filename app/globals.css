@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF6EF;
+  color: #3A2E22;
+}
+
+::selection {
+  background-color: #F5CBCB;
+  color: #3A2E22;
+}
+
+.fabric-texture {
+  position: relative;
+}
+
+.fabric-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/texture-grain.svg");
+  background-size: 200px 200px;
+  opacity: 0.5;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes stitch {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.stitch-line {
+  stroke-dasharray: 6 6;
+  stroke-dashoffset: 240;
+  animation: stitch 1.8s ease forwards;
+}
