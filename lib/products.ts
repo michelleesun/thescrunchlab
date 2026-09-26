@@ -16,7 +16,7 @@ export const products: Product[] = [
   {
     slug: "sustainable-scrunchie",
     name: "Sustainable Scrunchie",
-    price: 5.5,
+    price: 10.00,
     currency: "CAD",
     tagline: "One-of-a-kind, made from rescued fabric.",
     description:
@@ -56,7 +56,7 @@ export const products: Product[] = [
   {
     slug: "diy-scrunchie-kit",
     name: "DIY Scrunchie Kit",
-    price: 7.0,
+    price: 8.0,
     currency: "CAD",
     tagline: "Learn to sew your very own scrunchie, start to finish.",
     description:
